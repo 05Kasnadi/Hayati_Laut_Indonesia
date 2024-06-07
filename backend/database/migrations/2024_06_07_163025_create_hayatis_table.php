@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('hayatis', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('jenis');
+            $table->string('lokalitas');
+            $table->string('deskripsi');
             $table->timestamps();
         });
     }
