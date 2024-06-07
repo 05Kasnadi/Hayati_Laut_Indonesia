@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Api;
-
+use App\models\Hayati;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -12,7 +12,13 @@ class HayatiController extends Controller
      */
     public function index()
     {
-        //
+        $data = Hayati::orderBy('nama','asc')->get();
+        return response()->json([
+
+            'status'=>true,
+            'message'=>'data ditemukan',
+            'data'=>$data
+        ], 200);
     }
 
     /**
