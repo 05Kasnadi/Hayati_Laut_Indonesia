@@ -37,7 +37,7 @@ class HayatiController extends Controller
             'deskripsi'=>'required'
         ];
 
-        $validator = Validator::
+        $validator = Validator::make($request->all(), $rules);
 
         $dataHayati->nama = $request->nama;
         $dataHayati->jenis = $request->jenis;
