@@ -26,7 +26,8 @@ class HayatiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $dataHayati = new Hayati;
+
     }
 
     /**
