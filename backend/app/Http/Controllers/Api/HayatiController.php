@@ -93,6 +93,14 @@ class HayatiController extends Controller
             ], 404);
         }
 
+        $rules =[
+            'nama'=>'required',
+            'jenis'=>'required',
+            'lokalitas'=>'required',
+            'deskripsi'=>'required'
+        ];
+
+
     }
 
     /**
