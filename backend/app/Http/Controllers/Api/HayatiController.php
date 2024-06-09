@@ -41,6 +41,11 @@ class HayatiController extends Controller
                 'message'=>'Data ditemukan',
                 'data'=>$data
             ],200);
+        }else{
+            return response()->json([
+                'status' => false,
+                'message' =>'data tidak ditemukan'
+            ]);
         }
     }
 
