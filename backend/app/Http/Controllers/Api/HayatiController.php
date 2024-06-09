@@ -35,6 +35,13 @@ class HayatiController extends Controller
     public function show(string $id)
     {
         $data = Hayati::find($id);
+        if($data){
+            return response()->json([
+                'status'=>true,
+                'message'=>'Data ditemukan',
+                'data'=>$data
+            ],200);
+        }
     }
 
     /**
