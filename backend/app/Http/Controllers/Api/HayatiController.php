@@ -29,6 +29,7 @@ class HayatiController extends Controller
         $dataHayati = new Hayati;
 
         $rules =[
+            'nama'=>'required',
             
         ];
 
