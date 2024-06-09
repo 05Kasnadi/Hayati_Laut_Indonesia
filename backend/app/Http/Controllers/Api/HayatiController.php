@@ -100,6 +100,9 @@ class HayatiController extends Controller
             'deskripsi'=>'required'
         ];
         $validator = Validator::make($request->all(), $rules);
+        if ($validator->fails()) {
+            
+        }
 
     }
 
