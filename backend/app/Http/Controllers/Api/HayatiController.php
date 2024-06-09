@@ -127,6 +127,10 @@ class HayatiController extends Controller
     public function destroy(string $id)
     {
         $dataHayati = Hayati::find($id);
+        if(empty($dataHayati)){
+        
+        }
+
         
     }
 }
