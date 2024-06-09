@@ -86,6 +86,10 @@ class HayatiController extends Controller
     public function update(Request $request, string $id)
     {
         $dataHayati = Hayati::find($id);
+        if(empty($dataHayati)){
+        
+        }
+
     }
 
     /**
