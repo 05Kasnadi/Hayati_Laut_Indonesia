@@ -26,3 +26,5 @@ route::get('hayati/{id}',[HayatiController::class,'show']);
 route::post('hayati',[HayatiController::class,'store']);
 
 route::put('hayati/{id}',[HayatiController::class,'update']);
+
+route::delete('hayati/{id}',[HayatiController::class,'destroy']);
