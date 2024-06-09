@@ -114,6 +114,11 @@ class HayatiController extends Controller
         $dataHayati->deskripsi = $request->deskripsi;
 
         $post = $dataHayati->save();
+
+        return response()->json([
+            'status'=> true,
+            'message'=> 'Berhasil update data'
+        ]);
     }
 
     /**
