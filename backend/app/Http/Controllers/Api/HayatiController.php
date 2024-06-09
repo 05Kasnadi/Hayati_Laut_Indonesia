@@ -112,6 +112,8 @@ class HayatiController extends Controller
         $dataHayati->jenis = $request->jenis;
         $dataHayati->lokalitas = $request->lokalitas;
         $dataHayati->deskripsi = $request->deskripsi;
+
+        $post = $dataHayati->save();
     }
 
     /**
