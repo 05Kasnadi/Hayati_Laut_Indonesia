@@ -32,6 +32,7 @@ class HayatiController extends Controller
             'nama'=>'required',
             'jenis'=>'required',
             'lokalitas'=>'required',
+            'deskripsi'=>'required'
         ];
 
         $dataHayati->nama = $request->nama;
