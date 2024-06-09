@@ -28,6 +28,10 @@ class HayatiController extends Controller
     {
         $dataHayati = new Hayati;
 
+        $rules =[
+            
+        ];
+
         $dataHayati->nama = $request->nama;
         $dataHayati->jenis = $request->jenis;
         $dataHayati->lokalitas = $request->lokalitas;
