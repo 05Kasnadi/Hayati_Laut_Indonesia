@@ -39,7 +39,11 @@ class HayatiController extends Controller
 
         $validator = Validator::make($request->all(), $rules);
         if ($validator->fails()) {
-           
+            return response()->json([
+                'status'=> false,
+                'message' => 'gagal memasukan data',
+                'data' => $validator->errors()
+                ]);
         }
 
         $dataHayati->nama = $request->nama;
