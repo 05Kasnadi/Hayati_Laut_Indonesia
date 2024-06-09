@@ -22,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 route::get('hayati',[HayatiController::class,'index']);
 
 route::get('hayati/{id}',[HayatiController::class,'show']);
+
+route::post('hayati',[HayatiController::class,'store']);
