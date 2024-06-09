@@ -35,6 +35,11 @@ class HayatiController extends Controller
 
         $post = $dataHayati->save();
 
+        return response()->json([
+            'status'=> true,
+            'message'=> 'Berhasil memasukkan data'
+        ]);
+
     }
 
     /**
