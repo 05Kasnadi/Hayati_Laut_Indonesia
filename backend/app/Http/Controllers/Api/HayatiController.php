@@ -101,7 +101,11 @@ class HayatiController extends Controller
         ];
         $validator = Validator::make($request->all(), $rules);
         if ($validator->fails()) {
-            
+            return response()->json([
+                'status'=> false,
+                'message' => 'gagal update data',
+                'data' => $validator->errors()
+                ]);
         }
 
     }
