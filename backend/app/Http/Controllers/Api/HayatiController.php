@@ -38,6 +38,9 @@ class HayatiController extends Controller
         ];
 
         $validator = Validator::make($request->all(), $rules);
+        if ($validator->fails()) {
+           
+        }
 
         $dataHayati->nama = $request->nama;
         $dataHayati->jenis = $request->jenis;
