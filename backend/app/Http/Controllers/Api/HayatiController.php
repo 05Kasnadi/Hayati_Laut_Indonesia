@@ -31,6 +31,7 @@ class HayatiController extends Controller
         $rules =[
             'nama'=>'required',
             'jenis'=>'required',
+            'lokalitas'=>'required',
         ];
 
         $dataHayati->nama = $request->nama;
