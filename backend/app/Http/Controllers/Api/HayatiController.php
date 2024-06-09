@@ -34,7 +34,7 @@ class HayatiController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $data = Hayati::find($id);
     }
 
     /**
