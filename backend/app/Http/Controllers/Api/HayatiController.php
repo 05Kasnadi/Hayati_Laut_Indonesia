@@ -128,7 +128,10 @@ class HayatiController extends Controller
     {
         $dataHayati = Hayati::find($id);
         if(empty($dataHayati)){
-        
+            return response()->json([
+                'status' => false,
+                'message' => 'Data tidak ditemukan'
+            ], 404);
         }
 
         
