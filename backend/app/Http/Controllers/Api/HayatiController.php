@@ -99,7 +99,7 @@ class HayatiController extends Controller
             'lokalitas'=>'required',
             'deskripsi'=>'required'
         ];
-
+        $validator = Validator::make($request->all(), $rules);
 
     }
 
