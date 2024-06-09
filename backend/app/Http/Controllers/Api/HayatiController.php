@@ -136,5 +136,10 @@ class HayatiController extends Controller
 
         $post = $dataHayati->delete();
 
+        return response()->json([
+            'status'=> true,
+            'message'=> 'Berhasil delete data'
+        ]);
+
     }
 }
