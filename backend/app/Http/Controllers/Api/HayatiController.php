@@ -109,6 +109,7 @@ class HayatiController extends Controller
         }
 
         $dataHayati->nama = $request->nama;
+        $dataHayati->jenis = $request->jenis;
 
     }
 
