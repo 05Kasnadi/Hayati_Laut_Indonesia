@@ -134,6 +134,7 @@ class HayatiController extends Controller
             ], 404);
         }
 
-        
+        $post = $dataHayati->delete();
+
     }
 }
