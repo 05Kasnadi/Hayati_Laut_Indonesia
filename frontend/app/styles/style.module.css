@@ -1,43 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Playpen+Sans&display=swap');
 
-.layout
-{
+.layout {
     margin: 0;
 }
 
-.header
-{
+.header {
     display: flex;    
     background-color: #50667a;
-    /* perataan horizontal */
     justify-content: start;
-    /* perataan vertical */
     align-items: center;        
     padding: 10px;
-
     top: 0;
-    position: sticky;
+    position: static;
 }
 
-.content
-{
+.content {
     text-align: justify;
-    min-height: 750px;
+    min-height: max-content;
     padding: 20px;    
-
-    /* font-family: 'Ephesis', cursive;
-    font-size: 16px;     */
+    position: absolute; /* Ensure children and background image are positioned correctly */
+    z-index: 1; /* Ensure content is in front of the background image */
 }
 
-
-.footer
-{   
+.footer {   
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     background-color: #50667a;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Playpen Sans', cursive;
     font-size: 14px;
 }
@@ -46,21 +37,22 @@
 .content_bg {
     background-color: #0060fc7c;
     overflow: hidden;
+    position: static;
+    object-fit: fill; /* Ensure background image container is positioned correctly */
 }
 
 /* Container for the background image */
-.background-image-container {
-    position: absolute;
-    top: 0;
+.background_image_container {
+    position: sticky;
+    top: 10;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Ensure the image stays behind other content */
+    z-index: 1; /* Ensure the image stays behind other content */
 }
 
 /* Style for the background image */
-.background-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover the entire container */
+.background_image {
+    background-size: 1000px;
+    object-fit: fill; /* Cover the entire container */
 }

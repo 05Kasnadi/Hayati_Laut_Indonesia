@@ -40,11 +40,13 @@ export default function MainLayout({
         </header>
 
         {/* <div class="abc def hij"></div> */}
-        <section className={`${style.content} ${style.content_bg}`}>
-
+        <section className={`${style.content} ${style.content_bg} ${style.background_image_container} ${style.background_image}`}>
           {children}
+        <div className="background_image_container">
+        <img src="../images/bg.jpg" alt="bg" className="background_image" />
+        </div>
         </section>
-
+        
         <footer className={style.footer}>&copy; 2024 | Hayati Laut Indonesia</footer>
       </body>
     </html>

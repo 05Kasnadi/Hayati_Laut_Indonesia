@@ -51,7 +51,7 @@ export default function AddPage() {
       <section className="flex items-center mb-4">
         {/* area label */}
         <section className="w-1/4">
-          <label htmlFor="txt_npm">NPM</label>
+          <label htmlFor="txt_npm">No</label>
         </section>
 
         {/* area input */}
@@ -61,7 +61,7 @@ export default function AddPage() {
             name=""
             id="txt_npm"
             className="w-full border-2 border-slate-300 px-3 py-2 rounded-lg outline-none focus:border-sky-500"
-            placeholder="Isi Data NPM"
+            placeholder="Isi Nomor"
             onChange={(e) => setNPM(e.target.value)}
           />
         </section>
@@ -71,7 +71,7 @@ export default function AddPage() {
       <section className="flex items-center mb-4">
         {/* area label */}
         <section className="w-1/4">
-          <label htmlFor="txt_nama">Nama Mahasiswa</label>
+          <label htmlFor="txt_nama">Nama Hewan</label>
         </section>
 
         {/* area input */}
@@ -81,7 +81,7 @@ export default function AddPage() {
             name=""
             id="txt_nama"
             className="w-full border-2 border-slate-300 px-3 py-2 rounded-lg outline-none focus:border-sky-500"
-            placeholder="Isi Data Nama Mahasiswa"
+            placeholder="Isi Data Nama Hewan"
             onChange={(e) => setNama(e.target.value)}
           />
         </section>
@@ -91,7 +91,7 @@ export default function AddPage() {
       <section className="flex items-center mb-4">
         {/* area label */}
         <section className="w-1/4">
-          <label htmlFor="txt_telepon">Telepon Mahasiswa</label>
+          <label htmlFor="txt_telepon">Lokalitas</label>
         </section>
 
         {/* area input */}
@@ -101,7 +101,7 @@ export default function AddPage() {
             name=""
             id="txt_telepon"
             className="w-full border-2 border-slate-300 px-3 py-2 rounded-lg outline-none focus:border-sky-500"
-            placeholder="Isi Data Telepon Mahasiswa"
+            placeholder="Isi Lokalitas Hewan"
             onChange={(e) => setTelepon(e.target.value)}
           />
         </section>
@@ -111,7 +111,7 @@ export default function AddPage() {
       <section className="flex items-center mb-4">
         {/* area label */}
         <section className="w-1/4">
-          <label htmlFor="cbo_jurusan">Jurusan Mahasiswa</label>
+          <label htmlFor="cbo_jurusan">Jenis</label>
         </section>
 
         {/* area input */}
@@ -122,12 +122,12 @@ export default function AddPage() {
             className="w-full border-2 border-slate-300 px-3 py-2 rounded-lg outline-none focus:border-sky-500 bg-white"
             onChange={(e) => setJurusan(e.target.value)}
           >
-            <option value="">Pilih Jurusan Mahasiswa</option>
-            <option value="IF">Informatika</option>
-            <option value="SI">Sistem Informasi</option>
-            <option value="TI">Teknologi Informasi</option>
-            <option value="TK">Teknik Komputer</option>
-            <option value="SIA">Sistem Informasi Akuntansi</option>
+            <option value="">Pilih Jenis Hewan</option>
+            <option value="IF">Mamalia</option>
+            <option value="SI">Karnivora</option>
+            <option value="TI">Herbivora</option>
+            <option value="TK">Omnivora</option>
+            <option value="SIA">Bertelur</option>
           </select>
         </section>
       </section>
@@ -141,7 +141,7 @@ export default function AddPage() {
         <section className="w-3/4">
           <button
             id="btn_simpan"
-            className="mr-1 bg-sky-500 px-5 py-3 w-40 rounded-full text-white active:bg-black active:text-sky-300 text-center"
+            className="mr-1 bg-red-500 px-5 py-3 w-40 rounded-full text-white active:bg-black active:text-sky-300 text-center"
             onClick={setPost}
           >
             Simpan
@@ -149,7 +149,7 @@ export default function AddPage() {
 
           <button
             id="btn_refresh"
-            className="ml-1 border-2 border-sky-500 px-5 py-3 w-40 rounded-full text-center"
+            className="ml-1 border-2 border-red-500 px-5 py-3 w-40 rounded-full text-center"
             onClick={setRefresh}
           >
             Refresh
