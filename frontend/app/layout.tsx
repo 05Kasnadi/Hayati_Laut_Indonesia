@@ -34,16 +34,18 @@ export default function MainLayout({
       </head>
 
       <body className={style.layout}>
+        
         <header className={`${style.header}`}>
           <img src="../images/logo.png" alt="Logo" />
         </header>
 
         {/* <div class="abc def hij"></div> */}
         <section className={`${style.content} ${style.content_bg}`}>
+
           {children}
         </section>
 
-        <footer className={style.footer}>&copy; 2024 | PWBS - IF 21 CDX</footer>
+        <footer className={style.footer}>&copy; 2024 | Hayati Laut Indonesia</footer>
       </body>
     </html>
   );

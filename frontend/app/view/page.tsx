@@ -67,17 +67,19 @@ export default function ViewPage() {
       <nav className="flex justify-center mb-5">
         <Link
           href={"/add"}
-          className="mr-1 bg-sky-500 px-5 py-3 w-40 rounded-full text-white active:bg-black active:text-sky-300 text-center"
+          className="mr-1 bg-red-500 px-5 py-3 w-40 rounded-full text-white active:bg-black active:text-sky-300 text-center"
         >
           Tambah Data
         </Link>
         <a
           href={"/"}
-          className="ml-1 border-2 border-sky-500 px-5 py-3 w-40 rounded-full text-center"
+          className="ml-1 border-2 border-red-500 px-5 py-3 w-40 rounded-full text-center"
         >
           Refresh Data
         </a>
       </nav>
+
+
 
       {/* area pencarian data */}
       <form action="" onSubmit={searchData}>
@@ -86,14 +88,14 @@ export default function ViewPage() {
             type="text"
             name=""
             id=""
-            placeholder="Cari Data Mahasiswa (NPM / Nama / Telepon / Jurusan)"
+            placeholder="Cari Data Hewan (Aksi / No / Nama / Jenis / Lokalitas / Deskripsi)"
             className="mr-4 border-2 border-slate-300 px-3 py-2 w-2/5 rounded-lg outline-none focus:border-sky-500"
             onChange={(e) => {
               setSearch(e.target.value);
             }}
           />
 
-          <button className="bg-sky-500 border-2 border-sky-500 px-3 py-2 w-40 rounded-lg text-white">
+          <button className="bg-red-500 border-2 border-blue-500 px-3 py-2 w-40 rounded-lg text-white">
             Cari Data
           </button>
         </section>
@@ -118,30 +120,32 @@ export default function ViewPage() {
         {/* judul tabel */}
         <thead>
           <tr>
-            <th className="w-1/12 border-2 border-slate-300 bg-black text-white h-10 text-center">
+            <th className="w-1/12 border-2 border-slate-300 bg-red text-black h-10 text-center">
               Aksi
             </th>
-            <th className="w-1/12 border-2 border-slate-300 bg-black text-white h-10 text-center">
+            <th className="w-1/12 border-2 border-slate-300 bg- text-black h-10 text-center">
               No
             </th>
-            <th className="w-2/12 border-2 border-slate-300 bg-black text-white h-10 text-center">
-              NPM
-            </th>
-            <th className="w-auto border-2 border-slate-300 bg-black text-white h-10 text-center">
+            <th className="w-1/12 border-2 border-slate-300 bg- text-black h-10 text-center">
               Nama
             </th>
-            <th className="w-2/12 border-2 border-slate-300 bg-black text-white h-10 text-center">
-              Telepon
+            <th className="w-1/12 border-2 border-slate-300 bg- text-black h-10 text-center">
+              Jenis
             </th>
-            <th className="w-1/12 border-2 border-slate-300 bg-black text-white h-10 text-center">
-              Jurusan
+            <th className="w-1/12 border-2 border-slate-300 bg- text-black h-10 text-center">
+              Lokalitas
+            </th>
+            <th className="w-1/12 border-2 border-slate-300 bg- text-black h-10 text-center">
+              Deskripsi
             </th>
           </tr>
         </thead>
 
         {/* isi tabel */}
         <tbody>
-          {/* tampilkan data mahasiswa dari service getData dalam format object */}
+          {
+          
+          /* tampilkan data mahasiswa dari service getData dalam format object */}
 
           {
             // jika data tidak ditemukan
