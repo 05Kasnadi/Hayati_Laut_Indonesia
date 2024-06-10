@@ -1,3 +1,0 @@
-ini contoh file
-
-ini frontend
